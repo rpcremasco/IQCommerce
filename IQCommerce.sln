@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQCommerce", "IQCommerce\IQCommerce.csproj", "{75E2E152-608C-4E86-B6BC-A9AE4DEF2AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQCommerce.Tests", "IQCommerce.Tests\IQCommerce.Tests.csproj", "{0AAAEAC3-38DA-4CE8-AF65-E6EBCA159347}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75E2E152-608C-4E86-B6BC-A9AE4DEF2AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E2E152-608C-4E86-B6BC-A9AE4DEF2AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E2E152-608C-4E86-B6BC-A9AE4DEF2AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E2E152-608C-4E86-B6BC-A9AE4DEF2AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AAAEAC3-38DA-4CE8-AF65-E6EBCA159347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AAAEAC3-38DA-4CE8-AF65-E6EBCA159347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AAAEAC3-38DA-4CE8-AF65-E6EBCA159347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AAAEAC3-38DA-4CE8-AF65-E6EBCA159347}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72BE72A5-2F95-4A66-9925-1D05E32E5961}
+	EndGlobalSection
+EndGlobal

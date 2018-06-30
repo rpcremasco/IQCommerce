@@ -19,13 +19,17 @@ namespace IQCommerce
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+            bundles.Add(new ScriptBundle("~/bundles/jsstwo").Include(
+                      "~/Scripts/jquery-ui.min.js",                      
+                      "~/Scripts/fwslider.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/jssone").Include(
+                      "~/Scripts/jquery.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      //"~/Content/site.css",
+                      "~/Content/style.css"));
         }
     }
 }

@@ -3,21 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using IQCommerce.Models;
+using IQCommerce.ViewModels;
+using System.Data.Entity;
 
 namespace IQCommerce.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+
+        private ApplicationDbContext _context;
+
+        public HomeController()
         {
-            return View();
+            _context = new ApplicationDbContext();
         }
 
-        public ActionResult About()
+        protected override void Dispose(bool disposing)
         {
-            ViewBag.Message = "Your application description page.";
+            _context.Dispose();
+        }
 
-            return View();
+        public ActionResult Index()
+        {
+
+            var products = _context.Products.Include(c => c.ProductCategory).ToList();
+
+            return View(products);
+        }
+
+        public ActionResult Compras()
+        {
+            
+            return View(_context.Products.Include(c => c.ProductCategory).ToList());
+            //return RedirectToRoute("Shop");
+        }
+
+        public ViewResult About()
+        {
+            throw new NotImplementedException();
         }
 
         public ActionResult Contact()

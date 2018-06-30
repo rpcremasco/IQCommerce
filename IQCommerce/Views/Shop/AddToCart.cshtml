@@ -1,0 +1,15 @@
+﻿@model ICollection<IQCommerce.ViewModels.CartViewModel>
+
+<div class="ajaxcart">
+    @foreach (var prod in Model)
+    {
+        <li class="list_img"><img src="/images/1.jpg" alt="" /></li>
+        <li class="list_desc">
+            <h4>@prod.ProductName</h4><span class="actual">
+                @prod.Quantity x
+                $@prod.Price
+            </span>
+        </li>
+    }
+    
+</div>

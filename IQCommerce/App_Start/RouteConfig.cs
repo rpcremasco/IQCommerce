@@ -18,6 +18,16 @@ namespace IQCommerce
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+
+
+            routes.MapRoute(
+                name: "Shop",
+                url: "Shop/{action}/{id}",
+                defaults: new { action = "Index", id = UrlParameter.Optional }
+            );
+            
+
         }
     }
 }
